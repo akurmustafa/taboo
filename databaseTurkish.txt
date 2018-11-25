@@ -1,0 +1,9 @@
+﻿Fiil, İş, Oluş, Hareket, Eylem, Sözcük
+Uyak, Şiir, Dize, Benzerlik, Kafiye, Ses
+Sözlük, Anlam, Kelime, Sözcük, Açıklama, Lügat
+Kuş Bakışı, Harita, Tepe, Yukarı, Görmek, Kroki
+Okka, Ağırlık, Ölçü, Birim, Kilo, Tartı
+Kök, Sözcük, Ek, Yapım, Çekim, Kelime
+Şiir, Şair, Mısra, Dize, Kıta, Dörtlük
+Fabl, Hayvan, La Fontaine, Masal, İnsan, Hikaye
+Öykü, Hikaye, Kahraman, Yazar, Yer, Kitap
