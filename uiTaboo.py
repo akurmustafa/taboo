@@ -2,9 +2,12 @@
 from tkinter import *
 import taboo
 
+global default_time
+default_time = 60
+
 class Taboo:
 
-    def __init__(self, master):
+    def __init__(self, master, remaining_time):
         self.master = master
         master.title("Taboo Game")
         for i in range(5):
@@ -13,11 +16,12 @@ class Taboo:
         for i in range(5):
             master.grid_rowconfigure(i, minsize=60)  # set minsize for every row
             master.rowconfigure(i, weight=1)
-        
-        self.turn=False
+        self.add = "add"
+        self.subtract = "subtract"
+        self.whose_turn = False
         self.score_of_team_A = 0
         self.score_of_team_B = 0
-        self.remaining_time=None
+        self.remaining_time=remaining_time
         self.current_word = None
         self.taboo_word_1 = None
         self.taboo_word_2 = None
@@ -58,8 +62,8 @@ class Taboo:
         self.taboo_word_4_label = Label(master, textvariable=self.taboo_word_4_text)
         self.taboo_word_5_label = Label(master, textvariable=self.taboo_word_5_text)
 
-        self.true_button = Button(master, text="True", command=lambda: self.update("add"))
-        self.taboo_button = Button(master, text="Taboo", command=lambda: self.update("subtract"))
+        self.true_button = Button(master, text="True", command=lambda: self.update(self.add))
+        self.taboo_button = Button(master, text="Taboo", command=lambda: self.update(self.subtract))
         self.pass_button = Button(master, text="Pass", command=lambda: self.update("Pass"))
         self.play_button = Button(master, text="Play", command=lambda: self.start_game())
         # LAYOUT
@@ -98,19 +102,29 @@ class Taboo:
             return False
 
     def update(self, method):
-        if self.turn:
+        if self.whose_turn:
             if method == "add":
                 self.score_of_team_A += 1
+                self.score_of_team_A_label_text.set(self.score_of_team_A)
+                self.play_current_turn()
             elif method == "subtract":
                 self.score_of_team_A -= 1
-            self.score_of_team_A_label_text.set(self.score_of_team_A)
-        elif not self.turn:
+                self.score_of_team_A_label_text.set(self.score_of_team_A)
+                self.play_current_turn()
+            elif method == "None":
+                pass
+
+        elif not self.whose_turn:
             if method == "add":
                 self.score_of_team_B += 1
+                self.score_of_team_B_label_text.set(self.score_of_team_B)
+                self.play_current_turn()
             elif method == "subtract":
                 self.score_of_team_B -= 1
-            self.score_of_team_B_label_text.set(self.score_of_team_B)
-        self.play_current_turn()
+                self.score_of_team_B_label_text.set(self.score_of_team_B)
+                self.play_current_turn()
+            elif method == "None":
+                pass
 
     def play_current_turn(self): 
         randPlace = taboo.math.floor(taboo.random.random()*len(self.database))
@@ -127,22 +141,28 @@ class Taboo:
         self.taboo_word_3_text.set(self.taboo_word_3)
         self.taboo_word_4_text.set(self.taboo_word_4)
         self.taboo_word_5_text.set(self.taboo_word_5)
-    
-    def countdown(self, remaining_time = None):
-        if remaining_time is not None:
-            self.remaining_time = str(remaining_time)
+
+    def countdown(self):
         if int(self.remaining_time) <= 0:
-            self.remaining_time ="time's up!"
+            self.remaining_time ="Time's up!"
+            self.remaining_time_label_text.set(self.remaining_time)
+            self.add = "None"
+            self.subtract = "None"
         else:
             self.remaining_time = str(int(self.remaining_time) - 1)
             self.remaining_time_label_text.set(self.remaining_time)
-            # self.master.after(1000, self.countdown(remaining_time=int(self.remaining_time))) 
-  
-    def start_game(self, time_permitted=5):
-        self.turn = not self.turn
+            root.after(1000, my_gui.countdown)
+
+    def start_game(self, time_permitted = default_time + 1):
+        self.add = "add"
+        self.subtract = "subtract"
+        self.whose_turn = not self.whose_turn
         self.database = taboo.loadDatabase()
         self.play_current_turn()
-        
+        self.remaining_time=str(time_permitted)
+        root.after(10, my_gui.countdown)
+
+
 root = Tk()
-my_gui = Taboo(root)
+my_gui = Taboo(root, remaining_time = str(default_time))
 root.mainloop()

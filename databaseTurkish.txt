@@ -7,3 +7,12 @@ Kök, Sözcük, Ek, Yapım, Çekim, Kelime
 Şiir, Şair, Mısra, Dize, Kıta, Dörtlük
 Fabl, Hayvan, La Fontaine, Masal, İnsan, Hikaye
 Öykü, Hikaye, Kahraman, Yazar, Yer, Kitap
+Yapım Eki, Ek, Kelime, Kök, Türemiş, Yapım
+Fiilimsi, Sıfat Fiil, İsim Fiil, Zarf Fiil, Fiil, Ek
+Eş Sesli, Yazılış, Okunuş, Aynı, Sözcük, Sesteş
+Zıt Anlam, Karşıt, Sözcük, Örnek, Birbirine, Mana
+Mecaz, Kelime, Sözcük, Gerçek Anlam, Yan Anlam, Terim Anlam
+Özne, Cümle, İş, Kişi, Varlık, Öge
+Benzeşme, Sert, Ünsüz, Fıstıkçı Şahap, BGCD, Kural
+Masal, Olağanüstü, Kahraman, Yazar, Keloğlan, Kitap
+Hal Eki, Çekim Eki, -i hali, -de hali, -den hali, -e hali

@@ -41,7 +41,7 @@ def updateDatabase(database):
                 file.write('\n')
 
 def loadDatabase():
-    database = codecs.open('database.txt', 'r', encoding='utf-8').readlines()
+    database = codecs.open('databaseTurkish.txt', 'r', encoding='utf-8').readlines()
     database = [curline.strip() for curline in database]
     database = [curline.split(', ') for curline in database]
     return database
