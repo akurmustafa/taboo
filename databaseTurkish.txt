@@ -16,3 +16,11 @@ Mecaz, Kelime, Sözcük, Gerçek Anlam, Yan Anlam, Terim Anlam
 Benzeşme, Sert, Ünsüz, Fıstıkçı Şahap, BGCD, Kural
 Masal, Olağanüstü, Kahraman, Yazar, Keloğlan, Kitap
 Hal Eki, Çekim Eki, -i hali, -de hali, -den hali, -e hali
+Türemiş, Sözcük, Kelime, Yapım Eki, Çekim Eki, Yapı
+Ünsüz Yumuşaması, Ketçap, Harf, Ses, Ünlü, Sertleşme
+Fay, Hat, Deprem, Kırılmak, Sarsılmak, İstanbul
+Konuşturma, İntak, Hayvan, Cansız, Varlık, Sanat
+Öneri, Teklif, Çözüm, Yol, Cümle, İyi Olur
+Küçümseme, Nitelik, Değersiz, Yargı, Cümle, Azımsama
+İkilem, Kararsız, Cümle, Durum, Acaba, Tercih
+Varsayım, Olmamış, Tut ki, Farz et, Diyelim, Cümle
