@@ -1,3 +1,4 @@
+
 # taboo game project
 import codecs
 import unicodedata
@@ -8,28 +9,30 @@ import math
 from tkinter import *
 from tkinter import ttk
 
+
 class Taboo(object):
     def __init__(self, word, forbidden):
-        self.word=word
-        if len(forbidden)!=5:
+        self.word = word
+        if len(forbidden) != 5:
             raise ValueError('Number of the taboo words should be 4')
-        self.forbidden=forbidden
+        self.forbidden = forbidden
 
-    def getForbidden(self):
+    def get_forbidden(self):
         return self.forbidden
 
-    def getWord(self):
+    def get_word(self):
         return self.word
 
-    def addToDatabase(self):
-        database = loadDatabase()
+    def add_to_database(self):
+        database = load_database()
         if self.word not in [data[0] for data in database]:
             database.append([self.word] + self.forbidden)
-            updateDatabase(database)
+            update_database(database)
         else:
             print('Word is already in the database')
 
-def updateDatabase(database):
+
+def update_database(database):
     with open('database.txt', 'w', encoding='utf-8') as file:
         for item in database:
             for word in item:
@@ -40,38 +43,41 @@ def updateDatabase(database):
             if item != database[-1]:
                 file.write('\n')
 
-def loadDatabase():
-    database = codecs.open('databaseTurkish.txt', 'r', encoding='utf-8').readlines()
+
+def load_database():
+    database = codecs.open('database_turkish.txt', 'r', encoding='utf-8').readlines()
     database = [curline.strip() for curline in database]
     database = [curline.split(', ') for curline in database]
     return database
 
-def deleteFromDatabase(word):
-    database = loadDatabase()
+
+def delete_from_database(word):
+    database = load_database()
     if word not in [data[0] for data in database]:
         # add the database remove part
         pass
     else:
         print('The', word, 'is not in the database already')
 
-def playCurrentTurn(timePermitted=5):
-    count=0
-    database = loadDatabase()
-    teamAScore=0;
-    teamBScore=0;
-    randPlace = math.floor(random.random()*len(database))
-    # print(randPlace)
-    curWord =database[randPlace][0]
-    print('The word you will describe is', curWord)
-    print('Taboo words are', database[randPlace][1:]) 
-    for i in range(timePermitted+1):
-        print('Remaining time is ', str(timePermitted-i),'seconds')
+
+def play_current_turn(time_permitted=5):
+    count = 0
+    database = load_database()
+    team_A_score = 0
+    team_B_Score = 0
+    rand_place = math.floor(random.random()*len(database))
+    # print(rand_place)
+    cur_word = database[rand_place][0]
+    print('The word you will describe is', cur_word)
+    print('Taboo words are', database[rand_place][1:])
+    for i in range(time_permitted+1):
+        print('Remaining time is ', str(time_permitted-i), 'seconds')
         time.sleep(1)   # waits for 1 second
     print('Time is finished')
-    return curWord
+    return cur_word
 
-# tabu=Taboo('ben', ['çatı', 'ereğli', 'balkon', 'bahçe'])
-# tabu.addToDatabase()
+# tabu = Taboo('ben', ['çatı', 'ereğli', 'balkon', 'bahçe'])
+# tabu.add_to_database()
 
-# timePermitted=10    #seconds
-# playGame(timePermitted)
+# timePermitted = 10  #seconds
+# play_game(time_permitted)

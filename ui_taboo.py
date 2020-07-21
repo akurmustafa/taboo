@@ -1,12 +1,14 @@
+
 # from tkinter import Tk, Label, Button, Entry, IntVar, END, W, E, ttk
-from tkinter import *
 import taboo
+
+from tkinter import *
 
 global default_time
 default_time = 60
 
-class Taboo:
 
+class TabooPlay(object):
     def __init__(self, master, remaining_time):
         self.master = master
         master.title("Taboo Game")
@@ -21,14 +23,15 @@ class Taboo:
         self.whose_turn = False
         self.score_of_team_A = 0
         self.score_of_team_B = 0
-        self.remaining_time=remaining_time
+        self.remaining_time = remaining_time
         self.current_word = None
         self.taboo_word_1 = None
         self.taboo_word_2 = None
         self.taboo_word_3 = None
         self.taboo_word_4 = None
         self.taboo_word_5 = None
-        self.database = taboo.loadDatabase()
+        self.database = taboo.load_database()
+        self.entered_number = -1
 
         self.score_of_team_A_label_text = IntVar()
         self.score_of_team_B_label_text = IntVar()
@@ -68,31 +71,31 @@ class Taboo:
         self.play_button = Button(master, text="Play", command=lambda: self.start_game())
         # LAYOUT
         # ROW 1
-        self.team_A_label.grid(row=0, column=0, columnspan=1, sticky=(N,W,E,S))
-        self.score_of_team_A_label.grid(row=0, column=1, columnspan=1, sticky=(N,W,E,S))
-        self.team_B_label.grid(row=0, column=3, columnspan=1, sticky=(N,W,E,S))
-        self.score_of_team_B_label.grid(row=0, column=4, columnspan=2, sticky=(N,W,E,S))
+        self.team_A_label.grid(row=0, column=0, columnspan=1, sticky=(N, W, E, S))
+        self.score_of_team_A_label.grid(row=0, column=1, columnspan=1, sticky=(N, W, E, S))
+        self.team_B_label.grid(row=0, column=3, columnspan=1, sticky=(N, W, E, S))
+        self.score_of_team_B_label.grid(row=0, column=4, columnspan=2, sticky=(N, W, E, S))
 
         # ROW 2
-        self.current_word_label.grid(row=1, column=1, columnspan=3, sticky=(N,W,E,S))
-        self.remaining_time_label.grid(row=1, column=4, columnspan=1, sticky=(N,W,E,S))
+        self.current_word_label.grid(row=1, column=1, columnspan=3, sticky=(N, W, E, S))
+        self.remaining_time_label.grid(row=1, column=4, columnspan=1, sticky=(N, W, E, S))
         # ROW 3
-        self.taboo_word_1_label.grid(row=2, column=0, columnspan=1, sticky=(N,W,E,S))
-        self.taboo_word_2_label.grid(row=2, column=1, columnspan=1, sticky=(N,W,E,S))
-        self.taboo_word_3_label.grid(row=2, column=2, columnspan=1, sticky=(N,W,E,S))
-        self.taboo_word_4_label.grid(row=2, column=3, columnspan=1, sticky=(N,W,E,S))
-        self.taboo_word_5_label.grid(row=2, column=4, columnspan=1, sticky=(N,W,E,S))
+        self.taboo_word_1_label.grid(row=2, column=0, columnspan=1, sticky=(N, W, E, S))
+        self.taboo_word_2_label.grid(row=2, column=1, columnspan=1, sticky=(N, W, E, S))
+        self.taboo_word_3_label.grid(row=2, column=2, columnspan=1, sticky=(N, W, E, S))
+        self.taboo_word_4_label.grid(row=2, column=3, columnspan=1, sticky=(N, W, E, S))
+        self.taboo_word_5_label.grid(row=2, column=4, columnspan=1, sticky=(N, W, E, S))
 
         # ROW 4
-        self.true_button.grid(row=3, column=0, columnspan=2, sticky=(N,W,E,S))
-        self.taboo_button.grid(row=3, column=2, columnspan=1, sticky=(N,W,E,S))
-        self.pass_button.grid(row=3, column=3, columnspan=2, sticky=(N,W,E,S))
+        self.true_button.grid(row=3, column=0, columnspan=2, sticky=(N, W, E, S))
+        self.taboo_button.grid(row=3, column=2, columnspan=1, sticky=(N, W, E, S))
+        self.pass_button.grid(row=3, column=3, columnspan=2, sticky=(N, W, E, S))
 
         # ROW 5
-        self.play_button.grid(row=4, column=2, columnspan=1, sticky=(N,W,E,S))
+        self.play_button.grid(row=4, column=2, columnspan=1, sticky=(N, W, E, S))
 
     def validate(self, new_text):
-        if not new_text: # the field is being cleared
+        if not new_text:  # the field is being cleared
             self.entered_number = 0
             return True
         try:
@@ -127,13 +130,13 @@ class Taboo:
                 pass
 
     def play_current_turn(self): 
-        randPlace = taboo.math.floor(taboo.random.random()*len(self.database))
-        self.current_word = self.database[randPlace][0]
-        self.taboo_word_1 = self.database[randPlace][1]
-        self.taboo_word_2 = self.database[randPlace][2]
-        self.taboo_word_3 = self.database[randPlace][3]
-        self.taboo_word_4 = self.database[randPlace][4]
-        self.taboo_word_5 = self.database[randPlace][5]
+        rand_place = taboo.math.floor(taboo.random.random()*len(self.database))
+        self.current_word = self.database[rand_place][0]
+        self.taboo_word_1 = self.database[rand_place][1]
+        self.taboo_word_2 = self.database[rand_place][2]
+        self.taboo_word_3 = self.database[rand_place][3]
+        self.taboo_word_4 = self.database[rand_place][4]
+        self.taboo_word_5 = self.database[rand_place][5]
 
         self.current_word_text.set(self.current_word)
         self.taboo_word_1_text.set(self.taboo_word_1)
@@ -144,7 +147,7 @@ class Taboo:
 
     def countdown(self):
         if int(self.remaining_time) <= 0:
-            self.remaining_time ="Time's up!"
+            self.remaining_time = "Time's up!"
             self.remaining_time_label_text.set(self.remaining_time)
             self.add = "None"
             self.subtract = "None"
@@ -153,16 +156,16 @@ class Taboo:
             self.remaining_time_label_text.set(self.remaining_time)
             root.after(1000, my_gui.countdown)
 
-    def start_game(self, time_permitted = default_time + 1):
+    def start_game(self, time_permitted=default_time + 1):
         self.add = "add"
         self.subtract = "subtract"
         self.whose_turn = not self.whose_turn
-        self.database = taboo.loadDatabase()
+        self.database = taboo.load_database()
         self.play_current_turn()
-        self.remaining_time=str(time_permitted)
+        self.remaining_time = str(time_permitted)
         root.after(10, my_gui.countdown)
 
 
 root = Tk()
-my_gui = Taboo(root, remaining_time = str(default_time))
+my_gui = TabooPlay(root, remaining_time=str(default_time))
 root.mainloop()
