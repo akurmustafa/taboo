@@ -46,8 +46,8 @@ def update_database(database):
 
 def load_database():
     database = codecs.open('database_turkish.txt', 'r', encoding='utf-8').readlines()
-    database = [curline.strip() for curline in database]
-    database = [curline.split(', ') for curline in database]
+    database = [cur_line.strip() for cur_line in database]
+    database = [cur_line.split(', ') for cur_line in database]
     return database
 
 
@@ -75,6 +75,16 @@ def play_current_turn(time_permitted=5):
         time.sleep(1)   # waits for 1 second
     print('Time is finished')
     return cur_word
+
+
+def check_data_base():
+    database = load_database()
+    error = 0
+    for i in database:
+        if len(i) != 6:
+            error += 1
+    return error
+
 
 # tabu = Taboo('ben', ['çatı', 'ereğli', 'balkon', 'bahçe'])
 # tabu.add_to_database()

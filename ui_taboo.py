@@ -4,6 +4,9 @@ import taboo
 
 from tkinter import *
 
+import random
+import math
+
 global default_time
 default_time = 60
 
@@ -130,8 +133,8 @@ class TabooPlay(object):
                 pass
 
     def play_current_turn(self): 
-        rand_place = taboo.math.floor(taboo.random.random()*len(self.database))
-        self.current_word = self.database[rand_place][0]
+        rand_place = math.floor(random.random()*len(self.database))
+        self.current_word = self.database[rand_place][0].upper()
         self.taboo_word_1 = self.database[rand_place][1]
         self.taboo_word_2 = self.database[rand_place][2]
         self.taboo_word_3 = self.database[rand_place][3]
@@ -166,6 +169,9 @@ class TabooPlay(object):
         root.after(10, my_gui.countdown)
 
 
-root = Tk()
-my_gui = TabooPlay(root, remaining_time=str(default_time))
-root.mainloop()
+if taboo.check_data_base() == 0:
+    root = Tk()
+    my_gui = TabooPlay(root, remaining_time=str(default_time))
+    root.mainloop()
+else:
+    print('There is an error in database check database for wrong entry')

@@ -24,3 +24,156 @@ Konuşturma, İntak, Hayvan, Cansız, Varlık, Sanat
 Küçümseme, Nitelik, Değersiz, Yargı, Cümle, Azımsama
 İkilem, Kararsız, Cümle, Durum, Acaba, Tercih
 Varsayım, Olmamış, Tut ki, Farz et, Diyelim, Cümle
+PARAGRAF, Sınav, Soru, Ana düşünce, Yardımcı düşünce, Metin
+ANLATIM BİÇİMİ, Betimleme, Öyküleme, Tartışmacı, Açıklayıcı, Paragraf 
+ANLAM KAYMASI, Fiil, Kip,  Zaman, Anlam, Eylem 
+KOŞUL, Şart, Neden, Cümle, Eğer, Sonuç 
+BENZETME, Benzeyen, Benzetilen, Gibi, Güçlü, Güçsüz 
+ABARTMA, Mübalağa,  Aşırı, Farklı, Göstermek, Olduğundan 
+ÖDEV, Ders, Çalışmak, Okul, Öğretmen, Ev 
+ÜÇ NOKTA, Noktalama, Son, Tamamlanmamış, İstenmeyen, Cümle 
+HAYIFLANMA, Pişmanlık, Üzüntü, Geçmiş, Cümle, Anlam
+OLASILIK, Cümle, Anlam, İhtimal, Belki, Olabilir
+SIFAT, Ön ad, Niteleme, İsim, Zamir, İşaret
+ZAMİR, İsim, İşaret, Kişi, Adıl, Kelime 
+SOYUT, Duyu, Algılamak, Görülmeyen, İsim, Somut 
+SOMUT, Duyu, Algılamak, Soyut, İsim, Görülen 
+NOKTA, Cümle, Son, İşaret, Tarih, Saat 
+ZARF, Belirteç, Zaman,  Yer-Yön, Durum, Zaman 
+EK FİİL, Eylem,  İsim, Birleşik, Şart, Yüklem 
+KİP, Dilek, Fiil, Haber, Bildirme, Yüklem
+AŞAMALILIK, Giderek, Gittikçe, Kademe, Cümle, Anlam
+TERİM, Kelime, Anlam, Bilim, Sanat, Kavram
+KARŞILAŞTIRMA, Kıyaslama, Mukayese, Benzerlik, Farklılık, İki 
+AHESTE, Yavaş,  Ağır, Hızlı, Durgun, Tembel 
+HECE, Kelime, Harf, Ses, Okumak, Yazı
+KÜSMEK, Darılmak,  Kızmak, Konuşmak, Tartışmak, Kavga
+KURNA, Hamam,  Yıkanmak,  Su, Tellak, Göbek Taşı 
+AVİZE, Lamba,  Kristal, Tavan,  Işık, Aydınlık 
+KOORDİNAT, Yer,  Enlem, Boylam,  Belirtmek, Vermek 
+BASKÜL, Tartı, Kilo, Ağır, Ölçü, Hafif 
+HARABE, Yıkık, Eski, Tarihi, Efes, Gezmek 
+ÇAYLAK, Acemi, Deneyim, Tecrübe, Usta, Yeni 
+CEMRE, Düşmek,   Hava, Toprak, Su, Bahar 
+HALÜSİNASYON, Hayal, Gerçek, Görmek, İllüzyon, Serap 
+ŞAMDAN, Mum,  Işık, Aydınlık, Yakmak, Süs 
+TIRABZAN, Merdiven,  Korkuluk,  İnmek, Çıkmak, Bina
+KORNİŞ, Tavan,   Perde, Asmak, Pencere, Cam 
+NİHALE, Altlık, Tencere, Çaydanlık, Sıcak, Tezgâh
+DUY, Tavan, Lamba, Işık, İşitmek, Anahtar 
+ARMAĞAN, Hediye,  Vermek, Almak, Doğum günü, Sevindirmek 
+KABZIMAL, Meyve,  Sebze, Hal, Satmak, Aracı
+PİŞMANLIK, Hata,  Üzülmek, Yanlış, Keşke, Son
+KUMBARA, Para, Biriktirmek, Yatırım, Banka, Saklamak 
+ANTİKA, Müzayede, Zengin, Eski, Tablo, Tarihi 
+SAĞDIÇ, Damat,  Düğün, Gelin, Güvey, Sırtına vurmak 
+ADEM ELMASI, Erkek,  Gırtlak, Çıkıntı, Boğaz, Havva 
+SATRANÇ, Şah-Mat, Kale, Vezir, Piyon, Fil
+MANGALA, Oyun, Osmanlı, Kuyu, Taş, Hazine 
+PARAŞÜT, Uçak, Atlamak, Uçmak, Balon, Hava
+BALMUMU, Mum, Erimek, Heykel, Müze, Bal 
+FERMUAR, Pantolon, Mont, Giysi, Kıyafet, Kot
+KELEBEK, Renkli, Uçmak, Tırtıl, Koza, Hayvan 
+GÖKKUŞAĞI, Renkli, Hava, Güneş, Yağmur, Ebem
+MALA, İnşaat, Duvar,  Usta, Sıva, Çimento 
+TİYATRO, Oyuncu,  Sahne, Perde, Oyun, Suflör
+BAĞLAMA, Türkü, Müzik, Saz, Tel, Akort 
+DOST, Güven, Samimi, Dürüst, Arkadaş, Ahlaklı
+DERGİ, Gazete, Mecmua, Makale, Yazı, Kapak 
+KAPAN, Av, Kurt, Hayvan, Tuzak,  Fare 
+KEDİ, Pati,  Fare, Tüy, Kuyruk, Hayvan
+ANAHTAR, Kilit, Metal, Kasa, Kapı, Çilingir 
+EMPATİ, Kendini, Başkası, Yerine, Koyma, Düşünme
+HOŞGÖRÜ, Mevlana, Anlayış,  Empati, Ne olursan, Gel
+KİŞİLEŞTİRME, İnsan,   Fabl, Hayvan, Varlık, Konuşturma 
+ÖZÇEKİM, Selfie, Telefon, Kendi, Fotoğraf, Poz 
+ULEMA, Bilgin, Osmanlı, Din, Alim, Hoca 
+BONKÖR, Eli Açık, Cömert, Para, Gönlü Zengin, Harcamak
+HEYBETLİ, Yüce, Dağ, Büyük, Yüksek,  İri 
+ÇIRA, Ateş,  Yakmak, Odun, Tahta, Çay 
+MANİ, Kısa, Şiir, Edebiyat, Sakız, Engel 
+FİDAN, Ağaç, Büyümek, Küçük, Orman, Dikmek
+PRATİK, Kolay, Zekâ,  Çabuk, Hızlı, Çözüm 
+KIVILCIM, Ateş,   Kibrit, Çakmak, Taş, Sürtmek 
+MİSKİN, Tembel, Uyuşuk, Yavaş, Ağır, Kedi
+MESAİ, Saat, İş, Fazla, Akşam, Kalmak 
+KÜREMEK, Kar, Ev, Yol, Buz, Kış 
+KÖHNE, Eski, Tarihi, Yıkılmak, Bina,  Harabe 
+YAYIK, Ayran,  Su, Yoğurt, Çalkalamak, Süt 
+AKROSTİŞ, Şiir, Mısra, İsim, İlk, Kıta
+BAMBU, Sazlık, Mobilya, Ağaç, Masa, Sandalye 
+YABANİ, Vahşi, İlkel,  Hayat, Orman, Hayvan
+YELPAZE, Sıcak,   Rüzgâr, Yaz, Kadın, Sallamak 
+GÖÇMEN, Mülteci, Vize, Soğuk, Kuş, Sıcak 
+ÇUVAL, Torba, Doldurmak, Yem, Un, Koymak 
+TALİMAT, Emir, Vermek, Fatura, Banka, Otomatik Ödeme 
+SİFTAH, İlk, Gün, Satmak, Mal,  Alışveriş 
+FLAMA, Bayrak,  Üçgen, Okul, İzci, Tören 
+MÜSVEDDE, Karalama, Not Almak, Yazmak, Kâğıt, Temiz 
+AJANDA, Defter, İş, Yazmak, Gün, Toplantı 
+İŞTAH, Acıkmak, Kesilmek,  Açmak, Lezzet, Yemek 
+İHALE, Belediye,   Girmek, Açmak, Yolsuzluk, Kazanmak 
+UYANIK, Akıllı, Zeki, Açıkgöz, Kurnaz, Saf
+PASAKLI, Temiz, Titiz, Kirli, Düzenli, Karışık 
+HİLE, Aldatmak, Kandırmak, Oyun, Yapmak, Kumar 
+HALAY, Düğün, Çekmek, Oynamak, Mendil,  Kol 
+FİRAR, Kaçak,  Hapis, Asker, Mahkûm, Etmek 
+PLAKET, Ödül, Tören, Başarı, Vermek, Teşekkür 
+FULAR, Eşarp, Bağlamak, Baş, Boyun, Kadın 
+KAOS, Karışıklık, Ortam,  Kargaşa, Düzen, Yaratmak 
+SIRIK, Uzun,   Atlamak, Boy, Atletizm, Fasulye
+STAJ, Öğrenci, Çalışmak, Üniversite, Tecrübe, İş
+ARIZA, Bozuk, Tamir, Çalışmak, Telefon, Elektrik 
+TECRÜBE, İş, Kazanmak, Çalışmak, Deneyim, Yıl 
+MACUN, Cam, Pencere, Tutmak, Kenar, Mesir 
+SUİSTİMAL, İyi,  Niyet, Kullanmak, Faydalanmak, Kötü 
+SISKA, Zayıf, İnce, Çelimsiz, Şişman, Hasta 
+YADİGAR, Aile, Hatıra, Değerli, Miras, Bırakmak 
+ESİR, Mahkûm, Savaş, Düşmek, Tutsak, Kamp 
+MIZIKÇI, Çocuk,   Küsmek, Darılmak, Bozmak, Oyun 
+NADİR, Zor, Az, Bulmak, Sık, Çok 
+ÇAVDAR, Arpa, Tahıl, Buğday, Kepek, Ekmek 
+BUĞU, Buhar, Cam, Su, Sıcak, Araba
+PATİKA, Keçi Yolu, Orman, Kestirme, Yürümek,  Dağ
+VERESİYE, Peşin,  Borç, Satın Almak, Ödemek, Defter 
+ABLUKA, Etraf, Kuşatma, Savaş, Çevirmek, Düşman
+UCUZLUK, İndirim, Pahalı, Yüzde, Fiyat, Vitrin 
+PERFORMANS, Değerlendirme, Başarı,  Ders, Ödev, Yüksek 
+GÜZERGÂH, Yol,   Araba, Rota, Servis, Takip Etmek 
+PARANOYA, Şüphe, Akıl, Ruh, Hastalık, Deli
+FESHETMEK, Antlaşma, Sözleşme, İptal, Geçersiz, Bozmak
+ZEYBEK, Atatürk, Oyun, Ege, Efe, Sarı
+YADIRGAMAK, Garip, Tuhaf, Kabullenmek, Şaşırmak,  Davranış 
+MONOTON, Aynı,  Sıkıcı, Sıradan, Benzer, Rutin
+BOŞBOĞAZ, Konuşmak, Geveze, Sır, Söylemek, Anlatmak
+DİYAR, Memleket, Vatan, Dolaşmak, Gezmek, Âşık Veysel 
+DOZ, Miktar, İlaç,  Doktor, Reçete, Aşırı 
+PORSİYON, Yemek,   Tabak, Lokanta, Yarım, Restoran 
+KABİN, Giyinmek, Duş, Denemek, Mağaza, Kıyafet 
+SERVET, Kazanmak, Zenginlik, Mal, Mülk, Para 
+TEDARİK, Bulmak, Sağlamak, Malzeme, Etmek, Hazırlık 
+TABURE, Oturmak, Sandalye, Koltuk, Yemekhane,  Sırt 
+EREZYON, Toprak,  Kayma, Ağaç, Heyelan, TEMA
+ÇAMAŞIR, Kirli, Yıkamak, Makine, Deterjan, Giymek 
+NUMUNE, Örnek, Vermek, Tahlil, Yemek, Küçük 
+VİRAN, Eski, Yıkık,  Harap, Ev, Köhne 
+KASVET, Sıkıntı,   Gam, Karanlık, Aydınlık, Neşeli 
+MİÇO, Tayfa, Gemi, Kaptan, Deniz, Yardımcı 
+ESKİMO, Kutup, Buzul, Kar, Soğuk, Balık 
+HAMAK, Yatmak, Ağaç, Sallanmak, Kurmak, Piknik 
+GADDAR, Acımasız, Sert, Katı, Merhamet, İnsaf
+ÇADIR, Kamp,  Uyku Tulumu, Kurmak, Doğa,  Tatil 
+NADAS, Tarla,  Ekmek, Bırakmak, Dinlendirmek, Çiftçi 
+HASIR, Sepet, Şapka, Plaj, Deniz, Sermek
+BUKELAMUN, Hayvan, Renk,  Kertenkele, Değişmek, Sürüngen 
+KONVOY, Araba,  Gitmek, Dizilmek, Arka, Düğün 
+TAKUNYA, Tahta, Terlik, Ayakkabı, Giymek, Hamam 
+AKSİ, Sinirli, Ters, Zıt, Asabi, Huysuz 
+VEZNE, Banka, Para, Ödeme, Almak, Muhasebe 
+OLUK, Akmak, Su, Yağmur, Saçak, Boru 
+CEPHE, Savaş,  Ordu, Asker, Saldırmak, Barış 
+ÇEVİK, Kuvvet,  Polis, Asker, Güç, Hızlı
+YAMAÇ, Uçurum, Yüksek, Dağ, Dik, Paraşüt 
+PİL, Kalem, İnce,  Kumanda, El Feneri, Fen 
+ZİRAAT, Tarım,  Çiftçi, Toprak, Hayvan, Banka
+PROSPEKTÜS, İlaç, Eczane, Okumak, İçindekiler, Kullanmak 
