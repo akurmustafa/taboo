@@ -5,7 +5,7 @@ This is a Taboo Game in Turkish implemented in python.
 
 ## Getting Started
 
-You can just copy the project, you need python interpreter > 3.6 and numpy. To start playing run ui_taboo.py script
+You can just pull the project, you need python interpreter > 3.6, numpy and tkinter package. To start playing run ui_taboo.py script
 
 ## Deployment
 
